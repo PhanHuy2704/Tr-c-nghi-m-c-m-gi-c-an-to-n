@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trắc nghiệm cảm giác an toàn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .question {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0;
+      padding-left: 10px;
+    }
+
+    input[type="radio"] {
+      transform: scale(1.3);
+      margin-right: 10px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c5980;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      
+      text-align: left;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h2>Trắc nghiệm cảm giác an toàn</h2>
+
+  <form id="quizForm">
+    <div class="question">
+      <strong>1. Tôi thường thích ở cạnh ai đó hơn là ở một mình.</strong>
+      <label><input type="radio" name="q1" value="0"> Đúng </label>
+      <label><input type="radio" name="q1" value="1"> Không đúng </label>
+      <label><input type="radio" name="q1" value="1"> Không rõ </label>
+    </div>
+
+    <div class="question">
+      <strong>2. Tôi cảm thấy thoải mái trong các tình huống giao tiếp xã hội.</strong>
+      <label><input type="radio" name="q2" value="0"> Đúng </label>
+      <label><input type="radio" name="q2" value="1"> Không đúng </label>
+      <label><input type="radio" name="q2" value="1"> Không rõ </label>
+    </div>
+
+    <div class="question">
+      <strong>3. Tôi là người thiếu tự tin.</strong>
+      <label><input type="radio" name="q3" value="1"> Đúng </label>
+      <label><input type="radio" name="q3" value="0"> Không đúng </label>
+      <label><input type="radio" name="q3" value="1"> Không rõ </label>
+    </div>
+
+    <div class="question">
+      <p><strong>4. Tôi thấy mình đã nhận được đủ sự khen ngợi.</strong></p>
+      <label><input type="radio" name="q4" value="0"> Đúng </label>
+      <label><input type="radio" name="q4" value="1"> Không đúng </label>
+      <label><input type="radio" name="q4" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>5. Tôi thường thấy bất mãn với hiện tại.</strong></p>
+      <label><input type="radio" name="q5" value="1"> Đúng </label>
+      <label><input type="radio" name="q5" value="0"> Không đúng </label>
+      <label><input type="radio" name="q5" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>6. Tôi thấy mình được tôn trọng như những người khác.</strong></p>
+      <label><input type="radio" name="q6" value="0"> Đúng </label>
+      <label><input type="radio" name="q6" value="1"> Không đúng </label>
+      <label><input type="radio" name="q6" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>7. Tôi lo lắng trong một thời gian dài sau khi trải qua một chuyện không tốt đẹp.</strong></p>
+      <label><input type="radio" name="q7" value="1"> Đúng </label>
+      <label><input type="radio" name="q7" value="0"> Không đúng </label>
+      <label><input type="radio" name="q7" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>8. Tôi không hài lòng với chính mình.</strong></p>
+      <label><input type="radio" name="q8" value="0"> Đúng </label>
+      <label><input type="radio" name="q8" value="1"> Không đúng </label>
+      <label><input type="radio" name="q8" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>9. Nhìn chung, tôi không phải người ích kỷ.</strong></p>
+      <label><input type="radio" name="q9" value="0"> Đúng </label>
+      <label><input type="radio" name="q9" value="1"> Không đúng </label>
+      <label><input type="radio" name="q9" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>10. Tôi có xu hướng né tránh những điều khiến mình khó chịu.</strong></p>
+      <label><input type="radio" name="q10" value="1"> Đúng </label>
+      <label><input type="radio" name="q10" value="0"> Không đúng </label>
+      <label><input type="radio" name="q10" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>11. Tôi thường cô đơn dù đang ở bên người khác.</strong></p>
+      <label><input type="radio" name="q11" value="1"> Đúng </label>
+      <label><input type="radio" name="q11" value="0"> Không đúng </label>
+      <label><input type="radio" name="q11" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>12. Tôi cảm thấy cuộc sống không công bằng với mình.</strong></p>
+      <label><input type="radio" name="q12" value="0"> Đúng </label>
+      <label><input type="radio" name="q12" value="1"> Không đúng </label>
+      <label><input type="radio" name="q12" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>13. Tôi có thể chấp nhận và lắng nghe lời phê bình của bạn bè.</strong></p>
+      <label><input type="radio" name="q13" value="0"> Đúng </label>
+      <label><input type="radio" name="q13" value="1"> Không đúng </label>
+      <label><input type="radio" name="q13" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>14. Tôi rất dễ nản chí.</strong></p>
+      <label><input type="radio" name="q14" value="1"> Đúng </label>
+      <label><input type="radio" name="q14" value="0"> Không đúng </label>
+      <label><input type="radio" name="q14" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>15. Tôi cư xử thân thiện với hầu hết mọi người.</strong></p>
+      <label><input type="radio" name="q15" value="0"> Đúng </label>
+      <label><input type="radio" name="q15" value="1"> Không đúng </label>
+      <label><input type="radio" name="q15" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>16. Tôi thường cảm thấy cuộc sống nhàm chán.</strong></p>
+      <label><input type="radio" name="q16" value="1"> Đúng </label>
+      <label><input type="radio" name="q16" value="0"> Không đúng </label>
+      <label><input type="radio" name="q16" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>17. Hầu hết thời gian tôi khá lạc quan.</strong></p>
+      <label><input type="radio" name="q17" value="0"> Đúng </label>
+      <label><input type="radio" name="q17" value="1"> Không đúng </label>
+      <label><input type="radio" name="q17" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>18. Tôi tự thấy mình là người cực kì nhạy cảm.</strong></p>
+      <label><input type="radio" name="q18" value="1"> Đúng </label>
+      <label><input type="radio" name="q18" value="0"> Không đúng </label>
+      <label><input type="radio" name="q18" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>19. Hầu hết thời gian tôi thấy mình là người hạnh phúc.</strong></p>
+      <label><input type="radio" name="q19" value="0"> Đúng </label>
+      <label><input type="radio" name="q19" value="1"> Không đúng </label>
+      <label><input type="radio" name="q19" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>20. Tôi khá tự tin vào bản thân.</strong></p>
+      <label><input type="radio" name="q20" value="0"> Đúng </label>
+      <label><input type="radio" name="q20" value="1"> Không đúng </label>
+      <label><input type="radio" name="q20" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>21. Tôi thường cảm thấy không thoải mái.</strong></p>
+      <label><input type="radio" name="q21" value="0"> Đúng </label>
+      <label><input type="radio" name="q21" value="1"> Không đúng </label>
+      <label><input type="radio" name="q21" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>22. Tôi chưa thật sự hài lòng về bản thân.</strong></p>
+      <label><input type="radio" name="q22" value="1"> Đúng </label>
+      <label><input type="radio" name="q22" value="0"> Không đúng </label>
+      <label><input type="radio" name="q22" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>23. Tôi thường thấy chán nản.</strong></p>
+      <label><input type="radio" name="q23" value="1"> Đúng </label>
+      <label><input type="radio" name="q23" value="0"> Không đúng </label>
+      <label><input type="radio" name="q23" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>24. Khi gặp ai đó lần đầu, tôi luôn cảm thấy người ta không thích mình.</strong></p>
+      <label><input type="radio" name="q24" value="1"> Đúng </label>
+      <label><input type="radio" name="q24" value="0"> Không đúng </label>
+      <label><input type="radio" name="q24" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>25. Tôi có đủ tự tin vào bản thân.</strong></p>
+      <label><input type="radio" name="q25" value="0"> Đúng </label>
+      <label><input type="radio" name="q25" value="1"> Không đúng </label>
+      <label><input type="radio" name="q25" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>26. Nhìn chung, tôi thấy hầu hết mọi người đều đáng tin cậy.</strong></p>
+      <label><input type="radio" name="q26" value="0"> Đúng </label>
+      <label><input type="radio" name="q26" value="1"> Không đúng </label>
+      <label><input type="radio" name="q26" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>27. Tôi nghĩ rằng mình là người có ích trong xã hội.</strong></p>
+      <label><input type="radio" name="q27" value="0"> Đúng </label>
+      <label><input type="radio" name="q27" value="1"> Không đúng </label>
+      <label><input type="radio" name="q27" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>28. Nhìn chung, tôi khá hòa hợp với mọi người xung quanh.</strong></p>
+      <label><input type="radio" name="q28" value="0"> Đúng </label>
+      <label><input type="radio" name="q28" value="1"> Không đúng </label>
+      <label><input type="radio" name="q28" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>29. Tôi thường lo lắng về tương lai của mình.</strong></p>
+      <label><input type="radio" name="q29" value="1"> Đúng </label>
+      <label><input type="radio" name="q29" value="0"> Không đúng </label>
+      <label><input type="radio" name="q29" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>30. Tôi thấy mình mạnh mẽ và tràn đầy năng lượng.</strong></p>
+      <label><input type="radio" name="q30" value="0"> Đúng </label>
+      <label><input type="radio" name="q30" value="1"> Không đúng </label>
+      <label><input type="radio" name="q30" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>31. Tôi là người khéo ăn nói.</strong></p>
+      <label><input type="radio" name="q31" value="0"> Đúng </label>
+      <label><input type="radio" name="q31" value="1"> Không đúng </label>
+      <label><input type="radio" name="q31" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>32. Tôi luôn nghĩ mình là gánh nặng của người khác.</strong></p>
+      <label><input type="radio" name="q32" value="1"> Đúng </label>
+      <label><input type="radio" name="q32" value="0"> Không đúng </label>
+      <label><input type="radio" name="q32" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>33. Tôi thường gặp khó khăn khi bày tỏ cảm xúc.</strong></p>
+      <label><input type="radio" name="q33" value="1"> Đúng </label>
+      <label><input type="radio" name="q33" value="0"> Không đúng </label>
+      <label><input type="radio" name="q33" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>34. Tôi vui khi người khác gặp may mắn.</strong></p>
+      <label><input type="radio" name="q34" value="0"> Đúng </label>
+      <label><input type="radio" name="q34" value="1"> Không đúng </label>
+      <label><input type="radio" name="q34" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>35. Tôi thường cảm thấy mình đã bỏ quên điều gì đó.</strong></p>
+      <label><input type="radio" name="q35" value="1"> Đúng </label>
+      <label><input type="radio" name="q35" value="0"> Không đúng </label>
+      <label><input type="radio" name="q35" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>36. Tôi là người khá đa nghi.</strong></p>
+      <label><input type="radio" name="q36" value="1"> Đúng </label>
+      <label><input type="radio" name="q36" value="0"> Không đúng </label>
+      <label><input type="radio" name="q36" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>37. Phần lớn thời gian tôi cho rằng thế giới thật tốt đẹp và đáng sống.</strong></p>
+      <label><input type="radio" name="q37" value="0"> Đúng </label>
+      <label><input type="radio" name="q37" value="1"> Không đúng </label>
+      <label><input type="radio" name="q37" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>38. Tôi rất dễ rơi vào trạng thái bất an.</strong></p>
+      <label><input type="radio" name="q38" value="1"> Đúng </label>
+      <label><input type="radio" name="q38" value="0"> Không đúng </label>
+      <label><input type="radio" name="q38" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>39. Tôi thường kiểm điểm lại bản thân.</strong></p>
+      <label><input type="radio" name="q39" value="0"> Đúng </label>
+      <label><input type="radio" name="q39" value="1"> Không đúng </label>
+      <label><input type="radio" name="q39" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>40. Tôi đang sống theo ý mình, không theo ý người khác.</strong></p>
+      <label><input type="radio" name="q40" value="0"> Đúng </label>
+      <label><input type="radio" name="q40" value="1"> Không đúng </label>
+      <label><input type="radio" name="q40" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>41. Tôi thấy buồn khi không làm tốt việc gì đó.</strong></p>
+      <label><input type="radio" name="q41" value="0"> Đúng </label>
+      <label><input type="radio" name="q41" value="1"> Không đúng </label>
+      <label><input type="radio" name="q41" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>42. Tôi tự thấy mình khá thành công trong công việc.</strong></p>
+      <label><input type="radio" name="q42" value="0"> Đúng </label>
+      <label><input type="radio" name="q42" value="1"> Không đúng </label>
+      <label><input type="radio" name="q42" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>43. Tôi thích bộc lộ bản thân để người khác hiểu mình là người thế nào.</strong></p>
+      <label><input type="radio" name="q43" value="0"> Đúng </label>
+      <label><input type="radio" name="q43" value="1"> Không đúng </label>
+      <label><input type="radio" name="q43" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>44. Tôi tự thấy khả năng thích nghi của mình còn hạn chế.</strong></p>
+      <label><input type="radio" name="q44" value="1"> Đúng </label>
+      <label><input type="radio" name="q44" value="0"> Không đúng </label>
+      <label><input type="radio" name="q44" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>45. Tôi luôn kiên trì đến cùng với niềm tin “cứ đi thì ắt sẽ có đường”.</strong></p>
+      <label><input type="radio" name="q45" value="0"> Đúng </label>
+      <label><input type="radio" name="q45" value="1"> Không đúng </label>
+      <label><input type="radio" name="q45" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>46. Tôi thấy cuộc sống là một gánh nặng lớn.</strong></p>
+      <label><input type="radio" name="q46" value="1"> Đúng </label>
+      <label><input type="radio" name="q46" value="0"> Không đúng </label>
+      <label><input type="radio" name="q46" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>47. Tôi luôn muộn phiền vì cảm giác tự ti.</strong></p>
+      <label><input type="radio" name="q47" value="1"> Đúng </label>
+      <label><input type="radio" name="q47" value="0"> Không đúng </label>
+      <label><input type="radio" name="q47" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>48. Nói chung, tôi thấy mình ổn.</strong></p>
+      <label><input type="radio" name="q48" value="0"> Đúng </label>
+      <label><input type="radio" name="q48" value="1"> Không đúng </label>
+      <label><input type="radio" name="q48" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>49. Tôi có mối quan hệ tốt đẹp với bạn khác giới.</strong></p>
+      <label><input type="radio" name="q49" value="0"> Đúng </label>
+      <label><input type="radio" name="q49" value="1"> Không đúng </label>
+      <label><input type="radio" name="q49" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>50. Khi đi đường, tôi thấy khó chịu nếu bị người khác nhìn chằm chằm.</strong></p>
+      <label><input type="radio" name="q50" value="0"> Đúng </label>
+      <label><input type="radio" name="q50" value="1"> Không đúng </label>
+      <label><input type="radio" name="q50" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>51. Tôi rất dễ bị tổn thương.</strong></p>
+      <label><input type="radio" name="q51" value="0"> Đúng </label>
+      <label><input type="radio" name="q51" value="1"> Không đúng </label>
+      <label><input type="radio" name="q51" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>52. Tôi cảm thấy cuộc sống thật ấm áp.</strong></p>
+      <label><input type="radio" name="q52" value="0"> Đúng </label>
+      <label><input type="radio" name="q52" value="1"> Không đúng </label>
+      <label><input type="radio" name="q52" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>53. Tôi thấy lo ngại vì trí thông minh của mình.</strong></p>
+      <label><input type="radio" name="q53" value="1"> Đúng </label>
+      <label><input type="radio" name="q53" value="0"> Không đúng </label>
+      <label><input type="radio" name="q53" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>54. Tôi thường khiến người khác thoải mái.</strong></p>
+      <label><input type="radio" name="q54" value="0"> Đúng </label>
+      <label><input type="radio" name="q54" value="1"> Không đúng </label>
+      <label><input type="radio" name="q54" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>55. Tôi có nỗi sợ mơ hồ về tương lai.</strong></p>
+      <label><input type="radio" name="q55" value="1"> Đúng </label>
+      <label><input type="radio" name="q55" value="0"> Không đúng </label>
+      <label><input type="radio" name="q55" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>56. Mọi hành động của tôi đều hoàn toàn tự nhiên.</strong></p>
+      <label><input type="radio" name="q56" value="0"> Đúng </label>
+      <label><input type="radio" name="q56" value="1"> Không đúng </label>
+      <label><input type="radio" name="q56" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>57. Nói chung, tôi là người may mắn.</strong></p>
+      <label><input type="radio" name="q57" value="0"> Đúng </label>
+      <label><input type="radio" name="q57" value="1"> Không đúng </label>
+      <label><input type="radio" name="q57" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>58. Tôi có một tuổi thơ hạnh phúc.</strong></p>
+      <label><input type="radio" name="q58" value="0"> Đúng </label>
+      <label><input type="radio" name="q58" value="1"> Không đúng </label>
+      <label><input type="radio" name="q58" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>59. Tôi có rất nhiều bạn tốt.</strong></p>
+      <label><input type="radio" name="q59" value="0"> Đúng </label>
+      <label><input type="radio" name="q59" value="1"> Không đúng </label>
+      <label><input type="radio" name="q59" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>60. Phần lớn thời gian tôi đều thấy bất an.</strong></p>
+      <label><input type="radio" name="q60" value="1"> Đúng </label>
+      <label><input type="radio" name="q60" value="0"> Không đúng </label>
+      <label><input type="radio" name="q60" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>61. Tôi không thích ganh đua.</strong></p>
+      <label><input type="radio" name="q61" value="1"> Đúng </label>
+      <label><input type="radio" name="q61" value="0"> Không đúng </label>
+      <label><input type="radio" name="q61" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>62. Gia đình tôi rất hạnh phúc.</strong></p>
+      <label><input type="radio" name="q62" value="0"> Đúng </label>
+      <label><input type="radio" name="q62" value="1"> Không đúng </label>
+      <label><input type="radio" name="q62" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>63. Tôi thường lo sợ gặp phải tai bay vạ gió.</strong></p>
+      <label><input type="radio" name="q63" value="1"> Đúng </label>
+      <label><input type="radio" name="q63" value="0"> Không đúng </label>
+      <label><input type="radio" name="q63" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>64. Tôi thường khó chịu khi tiếp xúc với người khác.</strong></p>
+      <label><input type="radio" name="q64" value="1"> Đúng </label>
+      <label><input type="radio" name="q64" value="0"> Không đúng </label>
+      <label><input type="radio" name="q64" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>65. Nói chung, tôi rất dễ hài lòng.</strong></p>
+      <label><input type="radio" name="q65" value="0"> Đúng </label>
+      <label><input type="radio" name="q65" value="1"> Không đúng </label>
+      <label><input type="radio" name="q65" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>66. Cảm xúc của tôi khá thất thường.</strong></p>
+      <label><input type="radio" name="q66" value="1"> Đúng </label>
+      <label><input type="radio" name="q66" value="0"> Không đúng </label>
+      <label><input type="radio" name="q66" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>67. Nhìn chung, tôi được mọi người tôn trọng.</strong></p>
+      <label><input type="radio" name="q67" value="0"> Đúng </label>
+      <label><input type="radio" name="q67" value="1"> Không đúng </label>
+      <label><input type="radio" name="q67" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>68. Tôi có thể hợp tác tốt với người khác trong công việc.</strong></p>
+      <label><input type="radio" name="q68" value="0"> Đúng </label>
+      <label><input type="radio" name="q68" value="1"> Không đúng </label>
+      <label><input type="radio" name="q68" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>69. Tôi không thể kiểm soát cảm xúc của mình.</strong></p>
+      <label><input type="radio" name="q69" value="1"> Đúng </label>
+      <label><input type="radio" name="q69" value="0"> Không đúng </label>
+      <label><input type="radio" name="q69" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>70. Đôi khi tôi cảm thấy mọi người đang cười nhạo mình.</strong></p>
+      <label><input type="radio" name="q70" value="1"> Đúng </label>
+      <label><input type="radio" name="q70" value="0"> Không đúng </label>
+      <label><input type="radio" name="q70" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>71. Nhìn chung, tôi là người khá tự do.</strong></p>
+      <label><input type="radio" name="q71" value="0"> Đúng </label>
+      <label><input type="radio" name="q71" value="1"> Không đúng </label>
+      <label><input type="radio" name="q71" value="1"> Không rõ </label>
+    </div>
+    
+    <div class="question">
+      <p><strong>72. Nhìn chung, tôi cảm thấy thế giới khá công bằng với mình.</strong></p>
+      <label><input type="radio" name="q72" value="0"> Đúng </label>
+      <label><input type="radio" name="q72" value="1"> Không đúng </label>
+      <label><input type="radio" name="q72" value="1"> Không rõ </label>
+    </div>
+
+
+    
+     
+    <button type="button" onclick="tinhDiem()">Hiển thị kết quả</button>
+  </form>
+
+ <div id="result"></div>
+
+  <script>
+    function tinhDiem() {
+      let total = 0;
+      for (let i = 1; i <= 72; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) {
+          total += parseInt(selected.value);
+        }
+      }
+
+      let message = "<strong>Kết quả: " + total + " điểm – </strong>";
+      if (total <= 24) {
+        message += "<strong>Bình thường</strong>";
+      } else if (total <= 30) {
+        message += "<strong>Có khuynh hướng thiếu an toàn</strong>";
+      } else if (total <= 38) {
+        message += "<strong>Không có cảm giác an toàn</strong>";
+      } else {
+        message += "<strong>Thiếu an toàn nghiêm trọng, có chướng ngại tâm lý</strong>";
+      }
+      
+      
+    let thamkhao = "<br><br><strong>Xem thêm:</strong><br>";
+    thamkhao += "0 – 24 điểm: Bình thường<br>";
+    thamkhao += "25 – 30 điểm: Có khuynh hướng thiếu an toàn<br>";
+    thamkhao += "31 – 38 điểm: Không có cảm giác an toàn<br>";
+    thamkhao += "Trên 38 điểm: Thiếu an toàn nghiêm trọng, có chướng ngại tâm lý";
+
+    document.getElementById("result").innerHTML = message + thamkhao;
+  }
+  </script>
+</body>
+</html>
